@@ -548,3 +548,12 @@ void Test4()
         }
     }
 }
+
+void GeneralizingTest()
+{
+    Test0();
+    Test1();
+    Test2();
+    Test3();
+    Test4();
+}

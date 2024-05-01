@@ -49,7 +49,7 @@ class SingleLinkedList
 
         [[nodiscard]] bool operator!=(const BasicIterator<const Type>& rhs) const noexcept
         {
-            return this->node_ != rhs.node_;
+            return !(this->node_ == rhs.node_);
         }
 
         [[nodiscard]] bool operator==(const BasicIterator<Type>& rhs) const noexcept
@@ -59,7 +59,7 @@ class SingleLinkedList
 
         [[nodiscard]] bool operator!=(const BasicIterator<Type>& rhs) const noexcept
         {
-            return this->node_ != rhs.node_;
+            return !(this->node_ == rhs.node_);
         }
 
         BasicIterator& operator++() noexcept
